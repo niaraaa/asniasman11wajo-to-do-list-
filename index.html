@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do List Interaktif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Halaman Pembuka -->
+  <div id="welcome-page">
+    <img src="Logo_UPT_SMAN_11_WAJO.png" alt="Logo Sekolah" class="logo">
+    <h1>🏫 UPT SMAN 11 WAJO 🏫</h1>
+    <h2>Asnia Ramadhani</h2>
+    <p>Selamat Datang👋🏻</p>
+    <h3>To-Do List Interaktif</h3>
+    <button id="next-btn">Next →</button>
+  </div>
+
+  <!-- Halaman To-Do -->
+  <div id="todo-page" class="hidden">
+    <h2>To-Do List Interaktif📚</h2>
+
+    <label>
+      <input type="checkbox" id="dark-mode-toggle"> Mode Gelap
+    </label>
+
+    <div class="form">
+      <input type="text" id="task-name" placeholder="Tambah tugas...">
+      <input type="time" id="task-time">
+      <input type="date" id="task-date">
+      <button onclick="addTask()">Tambah</button>
+    </div>
+
+    <h3>Tugas Belum Selesai⚠️</h3>
+    <ul id="todo-list"></ul>
+
+    <h3>Tugas Sudah Selesai✅</h3>
+    <ul id="done-list"></ul>
+
+    <p id="motivation">"Lakukan yang terbaik hari ini😁‼️"</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
